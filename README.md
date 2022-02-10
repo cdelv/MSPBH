@@ -24,7 +24,7 @@ python3 MSPBH.py file_name.txt
 ```
 The program will check for any missing variables and notify them. If this happens, `template.txt` will be overwritten. If `User_metric` is `False`, you don't have to keep the Rieman and metric tensor components of the template. They are only necessary when that option is activated. The same happens with the function `Create_User_Metric_Tensor`.
 
-If you manage to execute the program successfully, you will see 2 output files, log.out and data.csv. The first one has information about all the variables read from the configuration file. The second one is a CSV file where you will find the time, <img src="https://render.githubusercontent.com/render/math?math=r"> coordinate, <img src="https://render.githubusercontent.com/render/math?math=\phi"> coordinate, energy, and angular momentum of the particle. This calculation is performed assuming that the particle is on the equatorial plane of the black hole(<img src="https://render.githubusercontent.com/render/math?math=\theta = \pi/2">). 
+If you manage to execute the program successfully, you will see 2 output files, log.out and data.csv. The first one has information about all the variables read from the configuration file. The second one is a CSV file where you will find the time, <img src="https://render.githubusercontent.com/render/math?math=r"> coordinate, <img src="https://render.githubusercontent.com/render/math?math=\phi"> coordinate, energy, and angular momentum of the particle. This calculation is performed assuming that the particle is on the equatorial plane of the black hole (<img src="https://render.githubusercontent.com/render/math?math=\theta = \pi/2">). 
 
 # Reference
 
