@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 #Modules
 import sys
 import numpy as np
