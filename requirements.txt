@@ -1,0 +1,4 @@
+sympy
+scipy
+einsteinpy
+matplotlib
