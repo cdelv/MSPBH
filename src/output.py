@@ -12,6 +12,16 @@ def plot_trayectory(z,t):
 	plt.xlabel('x', fontsize=15)
 	plt.ylabel('y', fontsize=15)
 	plt.show()
+	plt.plot(t,r)
+	plt.title('r vs. Time', fontsize=18, pad=15)
+	plt.xlabel('r', fontsize=15)
+	plt.ylabel('Time', fontsize=15)
+	plt.show()
+	plt.plot(t,phi)
+	plt.title('$\phi$ vs. Time', fontsize=18, pad=15)
+	plt.xlabel('$\phi$', fontsize=15)
+	plt.ylabel('Time', fontsize=15)
+	plt.show()
 
 def plot_energy(t,e,j):
 	plt.plot(t,e)

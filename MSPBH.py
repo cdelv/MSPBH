@@ -111,7 +111,7 @@ def main():
 
 	#Solve ODE
 	z = odeint(propagate.dif_equation, z0, t, args=(m, E, s, J, gamma, Part_gamma, Part_g00, Part_g33, g00, g11, g33,
-		g_up_00, g_up_11, g_up_33, R_3001, R_3013, R_3003, R_3113, R_3101, R_1001), rtol=1E-8, atol=1E-8)
+		g_up_00, g_up_11, g_up_33, R_3001, R_3013, R_3003, R_3113, R_3101, R_1001), rtol=1E-12, atol=1E-12)
 
 	e, j = propagate.Calculate_Energy(z,t,m,E,s,J,gamma,Part_g00,Part_g33,g_up_00,g_up_11,g_up_33)
 	
