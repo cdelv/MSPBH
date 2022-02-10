@@ -7,12 +7,5 @@ This code calculates the trayectory of a spinning particle arround a black hole 
 #To do tasks
 Documentation
 
-Add option for energy and momentum calculation
-
-Improve the configuration file
-
-Output results to a file
-
 Licensing
 
-Optimize the evaluations
