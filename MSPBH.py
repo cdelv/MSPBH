@@ -65,12 +65,16 @@ def main():
 			Metric_Tensor=propagate.Create_Metric_Tensor(M)
 
 		up_Metric_Tensor = Metric_Tensor.change_config('uu') #Metric tensor with 2 up indices.
-
-		print(Metric_Tensor)
-		print(up_Metric_Tensor)
 	
 		#Create the Riemann curvature tensor from the metric
 		Riemann_Tensor = propagate.Create_Riemann_Tensor(Metric_Tensor) #Make Riemann type (0,4)
+
+		with open('log.out', 'a') as f:
+			f.write(str(Metric_Tensor)+'\n')
+			f.write(str(up_Metric_Tensor)+'\n')
+			f.write(str(Riemann_Tensor)+'\n')
+			f.close()
+
 
 		#We are always in the plain. Evaluate theta = pi/2 to speed up the code
 		g00 = sympy.lambdify(params, Metric_Tensor[0,0].subs(coord[2], np.pi/2),'numpy')

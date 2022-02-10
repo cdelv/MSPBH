@@ -13,18 +13,6 @@ def plot_trayectory(z,t):
 	plt.ylabel('y', fontsize=15)
 	plt.show()
 
-	plt.plot(t,z[:,0])
-	plt.title('r vs time', fontsize=18, pad=15)
-	plt.xlabel('Time', fontsize=15)
-	plt.ylabel('r', fontsize=15)
-	plt.show()
-
-	plt.plot(t,z[:,1])
-	plt.title('$\phi$ vs time', fontsize=18, pad=15)
-	plt.xlabel('Time', fontsize=15)
-	plt.ylabel('$\phi$', fontsize=15)
-	plt.show()
-
 def plot_energy(t,e,j):
 	plt.plot(t,e)
 	plt.title('Particle Energy', fontsize=18, pad=15)

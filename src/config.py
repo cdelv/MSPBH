@@ -62,11 +62,7 @@ def log(data):
 			f.write('R_3013 = '+str(sympy.simplify(data.R_3013))+'\n')
 			f.write('R_3113 = '+str(sympy.simplify(data.R_3113))+'\n')
 			f.write('R_1001 = '+str(sympy.simplify(data.R_1001))+'\n')
-		elif data.User_metric:
-			tensor = data.Create_User_Metric_Tensor(coord)
-			f.write(str(tensor)+'\n')
-		else:
-			print('Remember to add to the log the metric tensor')
+			f.close()
 
 	print('The program parameters were outputted to log.out.')
 	
@@ -91,7 +87,7 @@ def check_file(data):
 		if not user_metricv.issubset(dir(data)):
 			for i in user_metricv:
 				if not {i}.issubset(dir(data)):
-					print(i,' variable is missing.')
+					print(i,' function is missing.')
 			file_template()
 			exit()		
 
